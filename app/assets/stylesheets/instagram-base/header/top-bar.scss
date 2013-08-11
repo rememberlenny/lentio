@@ -1,0 +1,55 @@
+.top-bar,
+.contain-to-grid{
+  position: relative;
+  height: 43px;
+  border-bottom: 1px solid rgb(28, 83, 128);
+  border-bottom-color: rgba(4, 40, 71, 0.8);
+  -webkit-box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0px 1px 1px rgba(0,0,0,.2);
+  box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgb(81, 127, 164);
+  background-image: asset-url("noise-1.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(81, 127, 164)), to(rgb(48, 96, 136)));
+  background-image: asset-url("noise-1.png"), -webkit-linear-gradient(top, rgb(81, 127, 164), rgb(48, 96, 136));
+  background-image: asset-url("noise-1.png"), -moz-linear-gradient(top, rgb(81, 127, 164), rgb(48, 96, 136));
+  background-image: asset-url("noise-1.png"), -o-linear-gradient(top, rgb(81, 127, 164), rgb(48, 96, 136));
+  background-image: asset-url("noise-1.png"), -ms-linear-gradient(top, rgb(81, 127, 164), rgb(48, 96, 136));
+  background-image: asset-url("noise-1.png"), linear-gradient(top, rgb(81, 127, 164), rgb(48, 96, 136));
+  background-position: 50% 50%;
+  z-index: 100;
+
+  .title-area{
+    float: none;
+  }
+
+  .logo{
+    height: 35px;
+    width: 59px;
+    background: asset-url('shared-assets.png') no-repeat 0 4px;
+    position: absolute;
+    top: 4px;
+    margin: 0;
+    text-indent: -9999em;
+
+    // Center the logo below
+    left: 50%;
+    margin-left: -50px;
+  }
+}
+
+.top-bar-home{
+  a:not(.button){
+    i{
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      height: 43px !important;
+      width: 46px !important;
+      margin: 0 !important;
+      background: asset-url('shared-assets.png') no-repeat 6px -194px;
+      &:hover{
+        background: url(/assets/shared-assets.png) no-repeat 6px -194px rgba(255, 255, 255, .1);
+      }
+    }
+  }
+}

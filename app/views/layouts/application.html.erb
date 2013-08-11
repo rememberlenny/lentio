@@ -22,7 +22,13 @@
 
   <body>
 
-    <%= yield %>
+    <%= render 'layouts/header/topbar' %>
+  
+    <div class="main">
+      
+      <%= render 'layouts/main/header' %>
+      <%= yield %>
+    </div>
 
     
     <%= javascript_include_tag "application" %>

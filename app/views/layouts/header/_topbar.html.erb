@@ -1,0 +1,31 @@
+<div class="contain-to-grid">
+<nav class="top-bar ">
+  <ul class="title-area text-center">
+    <!-- Title Area -->
+    <li class="name logo">
+      <h1><%= link_to "Lentio", root_path %></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section text-center">
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li class="top-bar-home">
+        <%= link_to root_path do %>
+          <i></i>
+        <% end %>
+      </li>
+    </ul>
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li>
+        <%= link_to '#' do %>
+          Lenny Bogdonoff
+        <% end %>
+      </li>
+    </ul>
+  </section>
+</nav>
+</div>
